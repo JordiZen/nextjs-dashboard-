@@ -3,8 +3,9 @@
 import { Responsive, WidthProvider } from "react-grid-layout";
 import Widget from "@/components/Widget";
 import "react-grid-layout/css/styles.css";
-import CalculadoraIVA from "@/components/CalculadoraIVA";
 import CalculadoraPladur from "@/components/CalculadoraPladur";
+import SquareMeterCalculator from '@/components/SquareMeterCalculator';
+
 
 
 
@@ -42,7 +43,7 @@ export default function ConstruccioPage() {
   isDraggable={false}
 >
       
-        <div key="1"><Widget size="1x1" title="Calculador Iva"><CalculadoraIVA /></Widget></div>
+        <div key="1"><Widget size="1x1" title="Calculador Iva"><SquareMeterCalculator /></Widget></div>
         <div key="3"><Widget size="1x1" title="2">...</Widget></div>
         <div key="4"><Widget size="1x2" title="Calculadora pladur"><CalculadoraPladur /></Widget></div>
         <div key="5"><Widget size="2x2" title="Totxanes">...</Widget></div>
