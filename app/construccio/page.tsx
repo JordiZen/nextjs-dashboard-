@@ -4,7 +4,7 @@ import { Responsive, WidthProvider } from "react-grid-layout";
 import Widget from "@/components/Widget";
 import "react-grid-layout/css/styles.css";
 import CalculadoraPladur from "@/components/CalculadoraPladur";
-import SquareMeterCalculator from '@/components/SquareMeterCalculator';
+import CalculadoraMetresQuadrats from "@/components/CalculadoraMetresQuadrats";
 
 
 
