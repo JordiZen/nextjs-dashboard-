@@ -22,8 +22,12 @@ const layout = [
 ];
 
 export default function DashboardConstruccio() {
+
+
   return (
     <div className="p-6 min-h-screen bg-[#525B6B]">
+              <h1 className="text-3xl font-bold text-white text-center mb-8">Construcció</h1>
+
       <ResponsiveGridLayout
         className="layout"
         layouts={{ lg: layout }}
