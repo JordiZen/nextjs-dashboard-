@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="w-[220px] bg-[#3a404d] text-white p-4 shadow-lg h-screen flex flex-col gap-4 border-r-4 border-[#2b2f38]">
+<aside className="w-[220px] bg-[#3a404d] text-white p-4 shadow-lg flex flex-col gap-4 border-r-4 border-[#2b2f38] sticky top-0 self-start h-fit">
       <h2 className="text-xl font-bold mb-4">Menú</h2>
       
       <Link
