@@ -39,7 +39,7 @@ export default function DashboardConstruccio() {
         isDraggable={false}
       >
         <div key="1">
-          <Widget size="1x1" title="Calculador Iva">
+          <Widget size="1x1" title="Calculadora M2">
             <CalculadoraMetresQuadrats />
           </Widget>
         </div>
