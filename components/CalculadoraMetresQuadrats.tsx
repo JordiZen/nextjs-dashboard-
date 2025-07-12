@@ -9,8 +9,8 @@ export default function CalculadoraMetresQuadrats() {
   const calcular = () => {
     if (!amplada || !llargada) return;
 
-    const a = parseFloat(amplada);
-    const l = parseFloat(llargada);
+    const a = parseFloat(amplada.replace(",", "."));
+    const l = parseFloat(llargada.replace(",", "."));
 
     if (isNaN(a) || isNaN(l)) return;
 
@@ -24,7 +24,7 @@ export default function CalculadoraMetresQuadrats() {
   };
 
   return (
-    <div className="flex flex-col gap-1 text-xs text-white w-[200px] h-[200px] bg-[#525B6B] p-2 rounded-xl shadow">
+    <div className="flex flex-col gap-1 text-xs text-white w-[200px] h-[200px] bg-[#3E4755] p-2 rounded-xl shadow overflow-y-auto">
       <input
         type="number"
         value={amplada ?? ""}
@@ -46,7 +46,7 @@ export default function CalculadoraMetresQuadrats() {
         className="px-1 py-1 rounded bg-[#2f333d] text-white border border-gray-500 text-xs"
       />
 
-      <div className="flex gap-2 mt-1">
+      <div className="flex gap-1 mt-0.5">
         <button
           onClick={calcular}
           className="bg-green-500 hover:bg-green-400 text-black px-2 py-1 rounded text-xs"
@@ -62,8 +62,8 @@ export default function CalculadoraMetresQuadrats() {
       </div>
 
       {resultat !== null && (
-        <div className="mt-2">
-          <p>
+        <div className="mt-1">
+          <p className="text-xs">
             Superfície: <strong>{resultat.toFixed(2)}</strong> m²
           </p>
         </div>
@@ -71,3 +71,4 @@ export default function CalculadoraMetresQuadrats() {
     </div>
   );
 }
+
