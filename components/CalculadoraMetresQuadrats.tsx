@@ -24,7 +24,7 @@ export default function CalculadoraMetresQuadrats() {
   };
 
   return (
-    <div className="flex flex-col gap-1 text-xs text-white w-[200px] h-[200px] bg-[#1e1e1e] p-2 rounded-xl shadow">
+    <div className="flex flex-col gap-1 text-xs text-white w-[200px] h-[200px] bg-[#525B6B] p-2 rounded-xl shadow">
       <input
         type="number"
         value={amplada ?? ""}
