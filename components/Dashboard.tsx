@@ -3,7 +3,7 @@
 import { Responsive, WidthProvider } from "react-grid-layout";
 import Widget from "@/components/Widget";
 import CalculadoraPladur from "@/components/CalculadoraPladur";
-import CalculadoraMetresQuadrats from "@/components/CalculadoraMetresQuadrats";
+import CalculadoraIVA from "@/components/CalculadoraIVA";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 
@@ -37,7 +37,7 @@ export default function Dashboard() {
       >
         <div key="1">
           <Widget size="1x1" title="Calculador IVA">
-            <CalculadoraMetresQuadrats />
+            <CalculadoraIVA />
           </Widget>
         </div>
         <div key="3">
