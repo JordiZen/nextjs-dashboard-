@@ -4,6 +4,7 @@ import { Responsive, WidthProvider } from "react-grid-layout";
 import Widget from "@/components/Widget";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
+import CalculadoraIVA from "@/components/CalculadoraIVA";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -30,7 +31,7 @@ export default function Dashboard() {
         isDraggable={false}
       >
         <div key="1">
-          <Widget size="1x1" title="IVA" />
+          <Widget size="1x1" title="IVA" /> 
         </div>
         <div key="2">
           <Widget size="1x2" title="Descompte" />
